@@ -1,0 +1,51 @@
+
+html, body
+  height: 100%
+
+body
+  overscroll-behavior-y: none
+
+.App
+  position: fixed
+  top: 0
+  left: 0
+  height: 100vh
+  width: 100%
+  overflow: hidden
+  pointer-events: none
+  display: flex
+  .scroll
+    pointer-events: none
+    width: 100%
+
+@media (hover: hover) and (pointer: fine)
+  #cursor
+    z-index: 99
+    position: fixed
+    left: 0
+    top: 0
+    pointer-events: none
+    will-change: transform
+
+    .cursor--inner--circle
+      width: 50px
+      height: 50px
+      border-radius: 50%
+      transform: translate(-50%, -50%)
+      border: solid 1px #1d213f
+      position: absolute
+
+  #cursor-dot
+    z-index: 99
+    position: fixed
+    left: 0
+    top: 0
+    pointer-events: none
+    will-change: transform
+    .cursor--inner--dot
+      width: 5px
+      height: 5px
+      border-radius: 50%
+      position: absolute
+      transform: translate(-50%, -50%)
+      border: solid 1px #1d213f
