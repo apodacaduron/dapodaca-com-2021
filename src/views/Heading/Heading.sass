@@ -1,0 +1,32 @@
+@import '../../vars'
+
+#heading
+  width: 100%
+  height: 100vh
+  margin: 0 auto
+  max-width: $maxWidth
+  padding-left: $sectionPaddingExtra
+  padding-right: $sectionPaddingExtra
+  box-sizing: border-box
+  position: relative
+  display: flex
+  justify-content: flex-end
+  flex-direction: column
+  .title-container
+    z-index: 2
+    margin-bottom: 200px
+    h1.title
+      line-height: 90%
+      font-size: 11rem
+      text-transform: uppercase
+    .subtitle
+      font-size: 4rem
+  .circle
+    z-index: 1
+    width: 55vw
+    height: 55vw
+    position: absolute
+    right: -10vw
+    bottom: -20vw
+    background: $red
+    border-radius: 50%
