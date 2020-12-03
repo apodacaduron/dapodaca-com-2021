@@ -1,0 +1,38 @@
+@import '../../vars'
+
+nav
+  width: 100%
+  position: absolute
+  top: 0
+  left: 0
+  height: 128px
+  padding: 0 $sectionPadding
+  box-sizing: border-box
+  display: flex
+  align-items: center
+  justify-content: space-between
+  .links
+    ul
+      li
+        list-style: none
+        margin: 0 30px
+        a
+          text-decoration: none
+          font-size: 1rem
+          cursor: pointer
+  .curriculum
+    button
+      background: $red
+      border: none
+      border-radius: 5px
+      -webkit-box-shadow: $shadow
+      -moz-box-shadow: $shadow
+      box-shadow: $shadow
+      padding: 15px 30px
+      color: $background
+      font-size: 1rem
+      cursor: pointer
+      &:hover
+        -webkit-box-shadow: $shadowHover
+        -moz-box-shadow: $shadowHover
+        box-shadow: $shadowHover

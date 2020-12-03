@@ -7,7 +7,8 @@ import useMouseMove from './hooks/useMouseMove';
 import './App.sass';
 import Heading from './views/Heading/Heading';
 import Profile from './views/Profile/Profile';
-import Nav from './views/Nav/Nav';
+import Nav from './components/Nav/Nav';
+import FeaturedProjects from './views/FeaturedProjects/FeaturedProjects';
 
 const App = () => {
   //Hook to grab window size
@@ -74,6 +75,7 @@ const App = () => {
         <Nav />
         <Heading />
         <Profile />
+        <FeaturedProjects />
       </div>
     </div>
   );
