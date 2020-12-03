@@ -3,7 +3,9 @@
 section
   padding-left: $sectionPaddingExtra
   padding-right: $sectionPaddingExtra
+  padding-bottom: 200px
   .flex
+    position: relative
     .column
       width: 50%
       .description
@@ -11,14 +13,30 @@ section
       .image-container
         border-radius: 20px
         background: $black
-        width: 60%
-        height: 350px
+        width: 80%
+        height: 400px
         overflow: hidden
         img
           object-fit: cover
           opacity: 0.5
           width: 100%
           height: 100%
+      .circle
+        z-index: -1
+        width: 25vw
+        height: 25vw
+        position: absolute
+        background: $red
+        border-radius: 50%
+        -webkit-box-shadow: $shadow
+        -moz-box-shadow: $shadow
+        box-shadow: $shadow
+      .circle-right
+        right: -15vw
+        bottom: -8vw
+      .circle-left
+        left: -15vw
+        bottom: -8vw
       .technologies
         .technology
           font-size: 1.5rem
@@ -26,5 +44,9 @@ section
           font-weight: bold
           line-height: 100%
           margin: 0 12px
+  .padding-project-title
+    padding-top: 100px
+  .padding-project
+    padding-top: 200px
 .text-align-right
   text-align: right

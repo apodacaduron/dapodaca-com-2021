@@ -9,6 +9,7 @@ import Heading from './views/Heading/Heading';
 import Profile from './views/Profile/Profile';
 import Nav from './components/Nav/Nav';
 import FeaturedProjects from './views/FeaturedProjects/FeaturedProjects';
+import Experience from './views/Experience/Experience';
 
 const App = () => {
   //Hook to grab window size
@@ -76,6 +77,7 @@ const App = () => {
         <Heading />
         <Profile />
         <FeaturedProjects />
+        <Experience />
       </div>
     </div>
   );

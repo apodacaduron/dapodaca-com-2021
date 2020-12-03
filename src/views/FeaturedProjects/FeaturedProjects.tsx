@@ -38,20 +38,31 @@ const FeaturedProjects = () => {
   ];
 
   return (
-    <section>
+    <section id='projects'>
       <div className='title-container flex'>
         <h2 className='section-title'>Projects</h2>
         <div className='section-trailing'>さ茨果</div>
       </div>
       {featuredProjects.map((project, index) => (
         <div
-          className={`flex ${project.side === 'left' ? 'flex-reverse' : ''}`}
+          className={`flex ${project.side === 'left' ? 'flex-reverse' : ''} ${
+            index === 0 ? 'padding-project-title' : 'padding-project'
+          }`}
           key={index}
         >
-          <div className='column'>
+          <div
+            className={`column flex ${
+              project.side === 'left' ? 'text-align-right flex-end' : ''
+            }`}
+          >
             <div className='image-container'>
               <img src={project.image} alt={project.name} />
             </div>
+            <div
+              className={`circle ${
+                project.side === 'left' ? 'circle-right' : 'circle-left'
+              }`}
+            ></div>
           </div>
           <div
             className={`column ${
