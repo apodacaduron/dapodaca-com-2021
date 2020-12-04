@@ -3,4 +3,33 @@
 #experience
   padding-left: $sectionPaddingExtra
   padding-right: $sectionPaddingExtra
-  padding-top: 200px
+  margin-top: 200px
+  margin-bottom: 300px
+  .experience-layout
+    margin: 80px 0
+    display: grid
+    grid-gap: 24px
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
+    grid-template-rows: auto 1fr auto
+    .experience-item
+      padding: 0 0 0 0
+      height: fit-content
+      display: flex
+      align-content: center
+      justify-content: center
+      flex-direction: column
+      text-align: center
+      overflow: hidden
+      cursor: pointer
+      height: 280px
+      background: white
+      border-radius: 20px
+      -webkit-box-shadow: 0px 14px 20px 0px rgba($black,0.05)
+      -moz-box-shadow: 0px 14px 20px 0px rgba($black,0.05)
+      box-shadow: 0px 14px 20px 0px rgba($black,0.05)
+      padding: 50px
+      box-sizing: border-box
+      img
+        max-height: 200px
+        height: 100%
+        object-fit: contain
