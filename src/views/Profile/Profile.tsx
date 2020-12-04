@@ -4,7 +4,7 @@ import './Profile.sass';
 
 const Profile = () => {
   return (
-    <div id='profile'>
+    <section id='profile'>
       <div className='title-container flex'>
         <h2 className='section-title'>Profile</h2>
         <div className='section-trailing'>イ哀バ</div>
@@ -35,7 +35,7 @@ const Profile = () => {
           <li>Elastic Beanstalk</li>
         </ul>
       </div>
-    </div>
+    </section>
   );
 };
 

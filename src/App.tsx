@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import useWindowSize from './hooks/useWindowSize';
 import FixedLinks from './components/FixedLinks/FixedLinks';
 import NoiseOverlay from './components/NoiseOverlay/NoiseOverlay';
-import useMouseMove from './hooks/useMouseMove';
+// import useMouseMove from './hooks/useMouseMove';
 
 import './App.sass';
 import Heading from './views/Heading/Heading';
@@ -14,6 +14,7 @@ import Contact from './views/Contact/Contact';
 import Footer from './components/Footer/Footer';
 
 const App = () => {
+  //////// Page Scroll
   //Hook to grab window size
   const size = useWindowSize();
 
