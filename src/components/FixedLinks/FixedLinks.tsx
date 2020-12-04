@@ -12,16 +12,32 @@ const FixedLinks = () => {
     <div id='fixed-links'>
       <div className='left-links'>
         <div className='vertical-icons'>
-          <a href='http://' target='_blank' rel='noopener noreferrer'>
+          <a
+            href='https://www.linkedin.com/in/danielapodaca96/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             <img className='icon' src={Linkedin} alt='' />
           </a>
-          <a href='http://' target='_blank' rel='noopener noreferrer'>
+          <a
+            href='https://www.instagram.com/danielapodaca96'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             <img className='icon' src={Instagram} alt='' />
           </a>
-          <a href='http://' target='_blank' rel='noopener noreferrer'>
+          <a
+            href='https://github.com/apodacaduron'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             <img className='icon' src={Github} alt='' />
           </a>
-          <a href='http://' target='_blank' rel='noopener noreferrer'>
+          <a
+            href='https://unsplash.com/@danielapodaca96'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             <img className='icon' src={Unsplash} alt='' />
           </a>
         </div>
