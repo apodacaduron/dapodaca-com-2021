@@ -10,6 +10,8 @@ import Profile from './views/Profile/Profile';
 import Nav from './components/Nav/Nav';
 import FeaturedProjects from './views/FeaturedProjects/FeaturedProjects';
 import Experience from './views/Experience/Experience';
+import Contact from './views/Contact/Contact';
+import Footer from './components/Footer/Footer';
 
 const App = () => {
   //Hook to grab window size
@@ -78,6 +80,8 @@ const App = () => {
         <Profile />
         <FeaturedProjects />
         <Experience />
+        <Contact />
+        <Footer />
       </div>
     </div>
   );
