@@ -12,11 +12,13 @@ import FeaturedProjects from './views/FeaturedProjects/FeaturedProjects';
 import Experience from './views/Experience/Experience';
 import Contact from './views/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import useIsMobile from './hooks/useIsMobile';
 
 const App = () => {
   //////// Page Scroll
   //Hook to grab window size
   const size = useWindowSize();
+  const isMobile = useIsMobile();
 
   // Ref for parent div and scrolling div
   const app = useRef<HTMLDivElement>(null);
@@ -56,13 +58,17 @@ const App = () => {
 
   // Run scrollrender once page is loaded.
   useEffect(() => {
-    requestAnimationFrame(() => skewScrolling());
+    if (!isMobile) {
+      requestAnimationFrame(() => skewScrolling());
+    }
   }, []);
 
   //set the height of the body.
   useEffect(() => {
-    setBodyHeight();
-  }, [size.height]);
+    if (!isMobile) {
+      setBodyHeight();
+    }
+  }, [size.height, size.width]);
 
   //Set the height of the body to the height of the scrolling div
   const setBodyHeight = () => {
@@ -72,7 +78,7 @@ const App = () => {
   };
 
   return (
-    <div ref={app} className='App'>
+    <div ref={app} className={`App ${!isMobile ? 'smooth-scroll' : ''}`}>
       <FixedLinks />
       <div ref={scrollContainer} className='scroll'>
         <NoiseOverlay />
