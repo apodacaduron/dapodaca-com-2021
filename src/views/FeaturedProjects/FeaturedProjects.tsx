@@ -1,5 +1,6 @@
 import React from 'react';
 import LeanFit from '../../assets/featured-projects/leanfit.jpg';
+import { ExternalLink } from 'react-feather';
 
 import './FeaturedProjects.sass';
 
@@ -10,8 +11,12 @@ const FeaturedProjects = () => {
       description:
         'An easier way to track your macros, get the app, join the program and wait for a coach to assign you new goals, this way you’ll achieve the body you are looking for.',
       technologies: ['Vue.js', 'Flutter', 'Laravel', 'Conekta', 'FCM'],
-      links: [],
-      linkIcons: [],
+      links: [
+        {
+          url: 'https://leanfit.mx',
+          icon: <ExternalLink color='#3B393C' />,
+        },
+      ],
       image: LeanFit,
       side: 'right',
     },
@@ -21,7 +26,6 @@ const FeaturedProjects = () => {
         'An easier way to track your macros, get the app, join the program and wait for a coach to assign you new goals, this way you’ll achieve the body you are looking for.',
       technologies: ['Vue.js', 'Flutter', 'Laravel', 'Conekta', 'FCM'],
       links: [],
-      linkIcons: [],
       image: LeanFit,
       side: 'left',
     },
@@ -30,8 +34,12 @@ const FeaturedProjects = () => {
       description:
         'An easier way to track your macros, get the app, join the program and wait for a coach to assign you new goals, this way you’ll achieve the body you are looking for.',
       technologies: ['Vue.js', 'Flutter', 'Laravel', 'Conekta', 'FCM'],
-      links: [],
-      linkIcons: [],
+      links: [
+        {
+          url: 'https://idhome.com.mx',
+          icon: <ExternalLink color='#3B393C' />,
+        },
+      ],
       image: LeanFit,
       side: 'right',
     },
@@ -80,6 +88,19 @@ const FeaturedProjects = () => {
               {project.technologies.map((technology, idx) => (
                 <div className='technology' key={idx}>
                   {technology}
+                </div>
+              ))}
+            </div>
+            <div
+              className={`links flex  ${
+                project.side === 'right' ? 'flex-reverse' : ''
+              }`}
+            >
+              {project.links.map((link, idx) => (
+                <div className='link' key={idx}>
+                  <a href={link.url} target='_blank' rel='noopener noreferrer'>
+                    {link.icon}
+                  </a>
                 </div>
               ))}
             </div>
