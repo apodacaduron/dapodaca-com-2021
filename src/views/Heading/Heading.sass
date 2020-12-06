@@ -35,3 +35,56 @@
     -webkit-box-shadow: $shadow
     -moz-box-shadow: $shadow
     box-shadow: $shadow
+
+@media only screen and (max-width: 1330px)
+  #heading
+    .title-container
+      h1.title
+        line-height: 90%
+        font-size: 8rem
+      .subtitle
+        font-size: 3rem
+@media only screen and (max-width: 1100px)
+  #heading
+    display: flex
+    align-items: center
+    justify-content: center
+    .title-container
+      margin-bottom: 0
+      text-align: center
+      h1.title
+        line-height: 90%
+        font-size: 8rem
+      .subtitle
+        font-size: 3rem
+    .circle
+      width: 60vw
+      height: 60vw
+      right: -25vw
+      bottom: -5vw
+@media only screen and (max-width: 900px)
+  #heading
+    .title-container
+      h1.title
+        line-height: 90%
+        font-size: 6rem
+      .subtitle
+        font-size: 2rem
+    .circle
+      width: 70vw
+      height: 70vw
+      right: -25vw
+      bottom: -5vw
+@media only screen and (max-width: 520px)
+  #heading
+    .title-container
+      h1.title
+        line-height: 90%
+        font-size: 4rem
+      .subtitle
+        font-size: 2rem
+    .circle
+      width: 100vw
+      height: 100vw
+      right: -50vw
+      bottom: -5vw
