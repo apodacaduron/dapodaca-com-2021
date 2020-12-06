@@ -1,11 +1,13 @@
 @import '../../vars'
 
 #experience
-  padding-left: $sectionPaddingExtra
-  padding-right: $sectionPaddingExtra
-  margin-top: 200px
-  margin-bottom: 300px
+  padding: 100px $sectionPaddingExtra 0 $sectionPaddingExtra
+  min-height: 100vh
   user-select: none
+  box-sizing: border-box
+  display: flex
+  justify-content: center
+  flex-direction: column
   .experience-layout
     margin: 80px 0
     display: grid
@@ -42,4 +44,4 @@
 
 @media only screen and (max-width: 900px)
   #experience
-    padding: 0 $mobilePadding
+    padding: 100px $mobilePadding 0 $mobilePadding

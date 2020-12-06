@@ -56,7 +56,7 @@ const Nav = ({ toggleMenu }: IProps) => {
         </ul>
       </div>
       <div className='curriculum'>
-        <button onClick={() => window.open(PDF)}>Download CV</button>
+        <button onClick={() => window.open(PDF)}>Resume</button>
       </div>
       <a className='menu' onClick={() => toggleMenu()}>
         <Menu color='#3B393C' />

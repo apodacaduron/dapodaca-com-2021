@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../../components/Footer/Footer';
 
 import './Contact.sass';
 
@@ -16,6 +17,7 @@ const Contact = () => {
           <button>Say Hello</button>
         </a>
       </div>
+      <Footer />
     </section>
   );
 };

@@ -11,7 +11,6 @@ import Nav from './components/Nav/Nav';
 import FeaturedProjects from './views/FeaturedProjects/FeaturedProjects';
 import Experience from './views/Experience/Experience';
 import Contact from './views/Contact/Contact';
-import Footer from './components/Footer/Footer';
 import useIsMobile from './hooks/useIsMobile';
 import Menu from './components/Menu/Menu';
 
@@ -94,7 +93,6 @@ const App = () => {
         <FeaturedProjects />
         <Experience />
         <Contact />
-        <Footer />
       </div>
     </div>
   );
