@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Logo from '../../assets/logo.svg';
-import { Link, Element, Events, scroller } from 'react-scroll';
+import { Events, scroller } from 'react-scroll';
+import PDF from '../../assets/CV_Daniel_Apodaca.pdf';
 
 import './Nav.sass';
 
@@ -50,7 +51,7 @@ const Nav = () => {
         </ul>
       </div>
       <div className='curriculum'>
-        <button onClick={() => console.log('test')}>Download CV</button>
+        <button onClick={() => window.open(PDF)}>Download CV</button>
       </div>
     </nav>
   );
