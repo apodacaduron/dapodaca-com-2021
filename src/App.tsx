@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import useWindowSize from './hooks/useWindowSize';
 import FixedLinks from './components/FixedLinks/FixedLinks';
 import NoiseOverlay from './components/NoiseOverlay/NoiseOverlay';
@@ -13,8 +13,10 @@ import Experience from './views/Experience/Experience';
 import Contact from './views/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import useIsMobile from './hooks/useIsMobile';
+import Menu from './components/Menu/Menu';
 
 const App = () => {
+  const [menuVisible, setMenuVisible] = useState(false);
   //////// Page Scroll
   //Hook to grab window size
   const size = useWindowSize();
@@ -80,9 +82,13 @@ const App = () => {
   return (
     <div ref={app} className={`App ${!isMobile ? 'smooth-scroll' : ''}`}>
       <FixedLinks />
+      <Menu
+        visible={menuVisible}
+        toggleMenu={() => setMenuVisible(!menuVisible)}
+      />
       <div ref={scrollContainer} className='scroll'>
         <NoiseOverlay />
-        <Nav />
+        <Nav toggleMenu={() => setMenuVisible(!menuVisible)} />
         <Heading />
         <Profile />
         <FeaturedProjects />

@@ -2,10 +2,15 @@ import React, { useEffect } from 'react';
 import Logo from '../../assets/logo.svg';
 import { Events, scroller } from 'react-scroll';
 import PDF from '../../assets/CV_Daniel_Apodaca.pdf';
+import { Menu } from 'react-feather';
 
 import './Nav.sass';
 
-const Nav = () => {
+interface IProps {
+  toggleMenu: () => void;
+}
+
+const Nav = ({ toggleMenu }: IProps) => {
   //////// Links scroll to sections
   useEffect(() => {
     Events.scrollEvent.register('begin', function () {
@@ -53,6 +58,9 @@ const Nav = () => {
       <div className='curriculum'>
         <button onClick={() => window.open(PDF)}>Download CV</button>
       </div>
+      <a className='menu' onClick={() => toggleMenu()}>
+        <Menu color='#3B393C' />
+      </a>
     </nav>
   );
 };
