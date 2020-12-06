@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/dapodaca-com-2021/static/css/main.95cbe8f1.chunk.css",
-    "main.js": "/dapodaca-com-2021/static/js/main.7f6d1330.chunk.js",
-    "main.js.map": "/dapodaca-com-2021/static/js/main.7f6d1330.chunk.js.map",
-    "runtime-main.js": "/dapodaca-com-2021/static/js/runtime-main.9cf705fa.js",
-    "runtime-main.js.map": "/dapodaca-com-2021/static/js/runtime-main.9cf705fa.js.map",
-    "static/js/2.89d093b1.chunk.js": "/dapodaca-com-2021/static/js/2.89d093b1.chunk.js",
-    "static/js/2.89d093b1.chunk.js.map": "/dapodaca-com-2021/static/js/2.89d093b1.chunk.js.map",
-    "static/js/3.f33ebc99.chunk.js": "/dapodaca-com-2021/static/js/3.f33ebc99.chunk.js",
-    "static/js/3.f33ebc99.chunk.js.map": "/dapodaca-com-2021/static/js/3.f33ebc99.chunk.js.map",
+    "main.css": "/dapodaca-com-2021/static/css/main.071efc13.chunk.css",
+    "main.js": "/dapodaca-com-2021/static/js/main.b4c3e07f.chunk.js",
+    "main.js.map": "/dapodaca-com-2021/static/js/main.b4c3e07f.chunk.js.map",
+    "runtime-main.js": "/dapodaca-com-2021/static/js/runtime-main.c2ec161a.js",
+    "runtime-main.js.map": "/dapodaca-com-2021/static/js/runtime-main.c2ec161a.js.map",
+    "static/js/2.fc03e792.chunk.js": "/dapodaca-com-2021/static/js/2.fc03e792.chunk.js",
+    "static/js/2.fc03e792.chunk.js.map": "/dapodaca-com-2021/static/js/2.fc03e792.chunk.js.map",
+    "static/js/3.6f5fcd5d.chunk.js": "/dapodaca-com-2021/static/js/3.6f5fcd5d.chunk.js",
+    "static/js/3.6f5fcd5d.chunk.js.map": "/dapodaca-com-2021/static/js/3.6f5fcd5d.chunk.js.map",
     "index.html": "/dapodaca-com-2021/index.html",
-    "static/css/main.95cbe8f1.chunk.css.map": "/dapodaca-com-2021/static/css/main.95cbe8f1.chunk.css.map",
-    "static/js/2.89d093b1.chunk.js.LICENSE.txt": "/dapodaca-com-2021/static/js/2.89d093b1.chunk.js.LICENSE.txt",
+    "static/css/main.071efc13.chunk.css.map": "/dapodaca-com-2021/static/css/main.071efc13.chunk.css.map",
+    "static/js/2.fc03e792.chunk.js.LICENSE.txt": "/dapodaca-com-2021/static/js/2.fc03e792.chunk.js.LICENSE.txt",
+    "static/media/CV_Daniel_Apodaca.82053a3d.pdf": "/dapodaca-com-2021/static/media/CV_Daniel_Apodaca.82053a3d.pdf",
     "static/media/App.sass": "/dapodaca-com-2021/static/media/SF-Pro-Display-Semibold.f50e0151.otf",
     "static/media/controlla.3e56cad5.svg": "/dapodaca-com-2021/static/media/controlla.3e56cad5.svg",
     "static/media/deskode.648bad64.png": "/dapodaca-com-2021/static/media/deskode.648bad64.png",
@@ -27,9 +28,9 @@
     "static/media/xnet.33f4ec25.svg": "/dapodaca-com-2021/static/media/xnet.33f4ec25.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9cf705fa.js",
-    "static/js/2.89d093b1.chunk.js",
-    "static/css/main.95cbe8f1.chunk.css",
-    "static/js/main.7f6d1330.chunk.js"
+    "static/js/runtime-main.c2ec161a.js",
+    "static/js/2.fc03e792.chunk.js",
+    "static/css/main.071efc13.chunk.css",
+    "static/js/main.b4c3e07f.chunk.js"
   ]
 }
