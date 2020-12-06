@@ -16,6 +16,7 @@ import Menu from './components/Menu/Menu';
 
 const App = () => {
   const [menuVisible, setMenuVisible] = useState(false);
+  const requestRef = React.useRef<number | null>();
   //////// Page Scroll
   //Hook to grab window size
   const size = useWindowSize();
@@ -33,10 +34,22 @@ const App = () => {
     rounded: 0,
   };
 
+  const toggleMenu = () => {
+    setMenuVisible(!menuVisible);
+    if (!isMobile) {
+      if (!menuVisible) {
+        requestRef.current && cancelAnimationFrame(requestRef.current);
+      } else {
+        requestAnimationFrame(() => skewScrolling());
+      }
+    }
+  };
+
   // Scrolling
-  const skewScrolling = () => {
+  function skewScrolling() {
     //Set Current to the scroll position amount
     data.current = window.scrollY;
+
     // Set Previous to the scroll previous position
     data.previous += (data.current - data.previous) * data.ease;
     // Set rounded to
@@ -54,13 +67,13 @@ const App = () => {
     }
 
     //loop vai raf
-    requestAnimationFrame(() => skewScrolling());
-  };
+    requestRef.current = requestAnimationFrame(() => skewScrolling());
+  }
 
   // Run scrollrender once page is loaded.
   useEffect(() => {
     if (!isMobile) {
-      requestAnimationFrame(() => skewScrolling());
+      requestRef.current = requestAnimationFrame(() => skewScrolling());
     }
   }, []);
 
@@ -81,13 +94,10 @@ const App = () => {
   return (
     <div ref={app} className={`App ${!isMobile ? 'smooth-scroll' : ''}`}>
       <FixedLinks />
-      <Menu
-        visible={menuVisible}
-        toggleMenu={() => setMenuVisible(!menuVisible)}
-      />
+      <Menu visible={menuVisible} toggleMenu={() => toggleMenu()} />
       <div ref={scrollContainer} className='scroll'>
         <NoiseOverlay />
-        <Nav toggleMenu={() => setMenuVisible(!menuVisible)} />
+        <Nav toggleMenu={() => toggleMenu()} />
         <Heading />
         <Profile />
         <FeaturedProjects />
