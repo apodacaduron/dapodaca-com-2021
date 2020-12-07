@@ -9,7 +9,7 @@ const FeaturedProjects = () => {
     {
       name: 'LeanFit',
       description:
-        'An easier way to track your macros, get the app, join the program and wait for a coach to assign you new goals, this way you’ll achieve the body you are looking for.',
+        'An easier way to track your macros, get the app, join the program and wait for your week to start, based on your stats the server will automatically assign you new goals each week.',
       technologies: ['Vue.js', 'Flutter', 'Laravel', 'Conekta', 'FCM'],
       links: [
         {
@@ -23,7 +23,7 @@ const FeaturedProjects = () => {
     {
       name: 'Cano Steel',
       description:
-        'An easier way to track your macros, get the app, join the program and wait for a coach to assign you new goals, this way you’ll achieve the body you are looking for.',
+        'Developed an app to allow customers of Cano Steel to track down the progress of manufacture of their different steel structures, and comunicate between eachother.',
       technologies: ['Vue.js', 'Flutter', 'Laravel', 'Conekta', 'FCM'],
       links: [],
       image: LeanFit,
@@ -32,7 +32,7 @@ const FeaturedProjects = () => {
     {
       name: 'ID HOME',
       description:
-        'An easier way to track your macros, get the app, join the program and wait for a coach to assign you new goals, this way you’ll achieve the body you are looking for.',
+        'A website for a premium furniture store that allows them to showcase the finest products to their customers, and also manage contact messages and inventory.',
       technologies: ['Vue.js', 'Flutter', 'Laravel', 'Conekta', 'FCM'],
       links: [
         {
