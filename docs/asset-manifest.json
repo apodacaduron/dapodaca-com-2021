@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/dapodaca-com-2021/static/css/main.22a9d0dc.chunk.css",
-    "main.js": "/dapodaca-com-2021/static/js/main.557b8c21.chunk.js",
-    "main.js.map": "/dapodaca-com-2021/static/js/main.557b8c21.chunk.js.map",
+    "main.css": "/dapodaca-com-2021/static/css/main.0720ce5c.chunk.css",
+    "main.js": "/dapodaca-com-2021/static/js/main.5ccedd9f.chunk.js",
+    "main.js.map": "/dapodaca-com-2021/static/js/main.5ccedd9f.chunk.js.map",
     "runtime-main.js": "/dapodaca-com-2021/static/js/runtime-main.cf07bf71.js",
     "runtime-main.js.map": "/dapodaca-com-2021/static/js/runtime-main.cf07bf71.js.map",
     "static/js/2.f44bdf43.chunk.js": "/dapodaca-com-2021/static/js/2.f44bdf43.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.c31431e0.chunk.js": "/dapodaca-com-2021/static/js/3.c31431e0.chunk.js",
     "static/js/3.c31431e0.chunk.js.map": "/dapodaca-com-2021/static/js/3.c31431e0.chunk.js.map",
     "index.html": "/dapodaca-com-2021/index.html",
-    "static/css/main.22a9d0dc.chunk.css.map": "/dapodaca-com-2021/static/css/main.22a9d0dc.chunk.css.map",
+    "static/css/main.0720ce5c.chunk.css.map": "/dapodaca-com-2021/static/css/main.0720ce5c.chunk.css.map",
     "static/js/2.f44bdf43.chunk.js.LICENSE.txt": "/dapodaca-com-2021/static/js/2.f44bdf43.chunk.js.LICENSE.txt",
     "static/media/CV_Daniel_Apodaca.82053a3d.pdf": "/dapodaca-com-2021/static/media/CV_Daniel_Apodaca.82053a3d.pdf",
     "static/media/App.sass": "/dapodaca-com-2021/static/media/SF-Pro-Display-Semibold.f50e0151.otf",
@@ -26,7 +26,7 @@
   "entrypoints": [
     "static/js/runtime-main.cf07bf71.js",
     "static/js/2.f44bdf43.chunk.js",
-    "static/css/main.22a9d0dc.chunk.css",
-    "static/js/main.557b8c21.chunk.js"
+    "static/css/main.0720ce5c.chunk.css",
+    "static/js/main.5ccedd9f.chunk.js"
   ]
 }
