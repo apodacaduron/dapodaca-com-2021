@@ -1,6 +1,8 @@
 import React from 'react';
 import LeanFit from '../../assets/featured-projects/leanfit.jpg';
-import { ExternalLink } from 'react-feather';
+import CanoSteel from '../../assets/featured-projects/cano-steel.jpg';
+import IdHome from '../../assets/featured-projects/id-home.jpg';
+import { ExternalLink, Smartphone, Play } from 'react-feather';
 
 import './FeaturedProjects.sass';
 
@@ -16,6 +18,11 @@ const FeaturedProjects = () => {
           url: 'https://leanfit.mx',
           icon: <ExternalLink color='#3B393C' />,
         },
+        {
+          url:
+            'https://play.google.com/store/apps/details?id=mx.com.controlla.leanfit_app',
+          icon: <Play color='#3B393C' />,
+        },
       ],
       image: LeanFit,
       side: 'right',
@@ -25,8 +32,18 @@ const FeaturedProjects = () => {
       description:
         'Developed an app to allow customers of Cano Steel to track down the progress of manufacture of their different steel structures, and comunicate between eachother.',
       technologies: ['Vue.js', 'Flutter', 'Laravel', 'Conekta', 'FCM'],
-      links: [],
-      image: LeanFit,
+      links: [
+        {
+          url:
+            'https://play.google.com/store/apps/details?id=com.controlla.cano_mobile',
+          icon: <Play color='#3B393C' />,
+        },
+        {
+          url: 'https://apps.apple.com/mx/app/cano-steel/id1513753715',
+          icon: <Smartphone color='#3B393C' />,
+        },
+      ],
+      image: CanoSteel,
       side: 'left',
     },
     {
@@ -40,7 +57,7 @@ const FeaturedProjects = () => {
           icon: <ExternalLink color='#3B393C' />,
         },
       ],
-      image: LeanFit,
+      image: IdHome,
       side: 'right',
     },
   ];
