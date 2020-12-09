@@ -39,21 +39,29 @@ const Menu: React.FC<IProps> = ({ visible = false, toggleMenu }) => {
   return (
     <div id='menu' className={`${visible ? 'menu-visible' : ''}`}>
       <NoiseOverlay opacity={0.5} />
-      <a className='close-menu' onClick={() => toggleMenu()}>
+      <a href='/#' className='close-menu' onClick={() => toggleMenu()}>
         <X color='#FCFBF6' />
       </a>
       <ul>
         <li>
-          <a onClick={() => scrollTo('profile')}>Profile</a>
+          <a href='/#' onClick={() => scrollTo('profile')}>
+            Profile
+          </a>
         </li>
         <li>
-          <a onClick={() => scrollTo('projects')}>Projects</a>
+          <a href='/#' onClick={() => scrollTo('projects')}>
+            Projects
+          </a>
         </li>
         <li>
-          <a onClick={() => scrollTo('experience')}>Experience</a>
+          <a href='/#' onClick={() => scrollTo('experience')}>
+            Experience
+          </a>
         </li>
         <li>
-          <a onClick={() => scrollTo('contact')}>Contact</a>
+          <a href='/#' onClick={() => scrollTo('contact')}>
+            Contact
+          </a>
         </li>
         <li>
           <button className='resume' onClick={() => window.open(PDF)}>

@@ -1,0 +1,54 @@
+@import '../../vars'
+
+#view-experience
+  width: 100%
+  min-height: 100vh
+  background: rgba($black, 0.98)
+  position: fixed
+  top: 0
+  left: 0
+  opacity: 0
+  pointer-events: none
+  z-index: 9
+  display: flex
+  align-items: center
+  justify-content: center
+  box-sizing: border-box
+  transition: 0.3s all ease-in-out
+  touch-action: none
+  .close
+    right: 20px
+    top: 20px
+    position: absolute
+    width: 60px
+    height: 60px
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    svg
+      stroke: $background
+  .view-content
+    max-width: 1200px
+    padding: $sectionPaddingExtra
+    .title
+      color: $background
+      line-height: 90%
+      font-weight: bold
+      font-size: 3rem
+    .period
+      color: $background
+      margin: 20px 0
+      font-size: 1.2rem
+    .description
+      color: $background
+      font-size: 1.2rem
+.visible
+  opacity: 1 !important
+  pointer-events: auto !important
+
+@media only screen and (max-width: 900px)
+  #view-experience
+    .view-content
+      max-width: 1200px
+      padding: $mobilePadding

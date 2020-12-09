@@ -13,9 +13,21 @@ import Experience from './views/Experience/Experience';
 import Contact from './views/Contact/Contact';
 import useIsMobile from './hooks/useIsMobile';
 import Menu from './components/Menu/Menu';
+import ViewExperience from './components/ViewExperience/ViewExperience';
+import { IExperience } from './utils/interfaces';
 
 const App = () => {
   const [menuVisible, setMenuVisible] = useState(false);
+  const [experienceVisible, setExperienceVisible] = useState(false);
+  const [experience, setExperience] = useState<IExperience>({
+    logo: '',
+    title: '',
+    description: '',
+    url: '',
+    from: '',
+    to: '',
+    isCurrent: false,
+  });
   const requestRef = React.useRef<number | null>();
   //////// Page Scroll
   //Hook to grab window size
@@ -95,13 +107,24 @@ const App = () => {
     <div ref={app} className={`App ${!isMobile ? 'smooth-scroll' : ''}`}>
       <FixedLinks />
       <Menu visible={menuVisible} toggleMenu={() => toggleMenu()} />
+      <ViewExperience
+        experience={experience}
+        visible={experienceVisible}
+        close={() => setExperienceVisible(false)}
+      />
       <div ref={scrollContainer} className='scroll'>
         <NoiseOverlay />
         <Nav toggleMenu={() => toggleMenu()} />
         <Heading />
         <Profile />
         <FeaturedProjects />
-        <Experience />
+        <Experience
+          onClick={(exp) => {
+            console.log(exp);
+            setExperience(exp);
+            setExperienceVisible(true);
+          }}
+        />
         <Contact />
       </div>
     </div>

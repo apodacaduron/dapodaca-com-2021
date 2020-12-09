@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Controlla from '../../assets/experiences/controlla.svg';
 import Xnet from '../../assets/experiences/xnet.svg';
 import Unsplash from '../../assets/experiences/unsplash.png';
@@ -7,8 +7,13 @@ import Itsncg from '../../assets/experiences/itsncg.png';
 import Video from '../../assets/experiences/video.svg';
 
 import './Experience.sass';
+import { IExperience } from '../../utils/interfaces';
 
-const Experience = () => {
+interface IProps {
+  onClick?: (experience: IExperience) => void;
+}
+
+const Experience: FC<IProps> = ({ onClick }) => {
   const experiences = [
     {
       logo: Controlla,
@@ -80,9 +85,13 @@ const Experience = () => {
       </div>
       <div className='experience-layout'>
         {experiences.map((experience, index) => (
-          <div className='experience-item' key={index}>
+          <a
+            className='experience-item'
+            key={index}
+            onClick={() => onClick && onClick(experience)}
+          >
             <img src={experience.logo} alt={experience.title} />
-          </div>
+          </a>
         ))}
       </div>
     </section>
