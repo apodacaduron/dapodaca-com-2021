@@ -5,9 +5,10 @@ import Unsplash from '../../assets/experiences/unsplash.png';
 import Deskode from '../../assets/experiences/deskode.png';
 import Itsncg from '../../assets/experiences/itsncg.png';
 import Video from '../../assets/experiences/video.svg';
+import { IExperience } from '../../utils/interfaces';
+import Fade from 'react-reveal';
 
 import './Experience.sass';
-import { IExperience } from '../../utils/interfaces';
 
 interface IProps {
   onClick?: (experience: IExperience) => void;
@@ -79,21 +80,23 @@ const Experience: FC<IProps> = ({ onClick }) => {
 
   return (
     <section id='experience'>
-      <div className='title-container flex'>
-        <h2 className='section-title'>Experience</h2>
-        <div className='section-trailing'>逸し宛</div>
-      </div>
-      <div className='experience-layout'>
-        {experiences.map((experience, index) => (
-          <a
-            className='experience-item'
-            key={index}
-            onClick={() => onClick && onClick(experience)}
-          >
-            <img src={experience.logo} alt={experience.title} />
-          </a>
-        ))}
-      </div>
+      <Fade cascade>
+        <div className='title-container flex'>
+          <h2 className='section-title'>Experience</h2>
+          <div className='section-trailing'>逸し宛</div>
+        </div>
+        <div className='experience-layout'>
+          {experiences.map((experience, index) => (
+            <a
+              className='experience-item'
+              key={index}
+              onClick={() => onClick && onClick(experience)}
+            >
+              <img src={experience.logo} alt={experience.title} />
+            </a>
+          ))}
+        </div>
+      </Fade>
     </section>
   );
 };

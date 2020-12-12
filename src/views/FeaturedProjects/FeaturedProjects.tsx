@@ -3,6 +3,7 @@ import LeanFit from '../../assets/featured-projects/leanfit.jpg';
 import CanoSteel from '../../assets/featured-projects/cano-steel.jpg';
 import IdHome from '../../assets/featured-projects/id-home.jpg';
 import { ExternalLink, Smartphone, Play } from 'react-feather';
+import Fade from 'react-reveal';
 
 import './FeaturedProjects.sass';
 
@@ -64,66 +65,72 @@ const FeaturedProjects = () => {
 
   return (
     <section id='projects'>
-      <div className='title-container flex'>
-        <h2 className='section-title'>Projects</h2>
-        <div className='section-trailing'>さ茨果</div>
-      </div>
-      {featuredProjects.map((project, index) => (
-        <div
-          className={`flex ${project.side === 'left' ? 'flex-reverse' : ''} ${
-            index === 0 ? 'padding-project-title' : 'padding-project'
-          }`}
-          key={index}
-        >
-          <div
-            className={`project-image column flex ${
-              project.side === 'left' ? 'text-align-right flex-end' : ''
-            }`}
-          >
-            <div className='image-container'>
-              <img src={project.image} alt={project.name} />
-            </div>
-            <div
-              className={`circle ${
-                project.side === 'left' ? 'circle-right' : 'circle-left'
-              }`}
-            ></div>
-          </div>
-          <div
-            className={`project-text column ${
-              project.side === 'right' ? 'text-align-right' : ''
-            }`}
-          >
-            <div className='section-subtitle'>Featured Project</div>
-            <div className='section-title'>{project.name}</div>
-            <p className='description'>{project.description}</p>
-            <div
-              className={`technologies flex  ${
-                project.side === 'right' ? 'flex-reverse' : ''
-              }`}
-            >
-              {project.technologies.map((technology, idx) => (
-                <div className='technology' key={idx}>
-                  {technology}
-                </div>
-              ))}
-            </div>
-            <div
-              className={`links flex  ${
-                project.side === 'right' ? 'flex-reverse' : ''
-              }`}
-            >
-              {project.links.map((link, idx) => (
-                <div className='link' key={idx}>
-                  <a href={link.url} target='_blank' rel='noopener noreferrer'>
-                    {link.icon}
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
+      <Fade cascade>
+        <div className='title-container flex'>
+          <h2 className='section-title'>Projects</h2>
+          <div className='section-trailing'>さ茨果</div>
         </div>
-      ))}
+        {featuredProjects.map((project, index) => (
+          <div
+            className={`flex ${project.side === 'left' ? 'flex-reverse' : ''} ${
+              index === 0 ? 'padding-project-title' : 'padding-project'
+            }`}
+            key={index}
+          >
+            <div
+              className={`project-image column flex ${
+                project.side === 'left' ? 'text-align-right flex-end' : ''
+              }`}
+            >
+              <div className='image-container'>
+                <img src={project.image} alt={project.name} />
+              </div>
+              <div
+                className={`circle ${
+                  project.side === 'left' ? 'circle-right' : 'circle-left'
+                }`}
+              ></div>
+            </div>
+            <div
+              className={`project-text column ${
+                project.side === 'right' ? 'text-align-right' : ''
+              }`}
+            >
+              <div className='section-subtitle'>Featured Project</div>
+              <div className='section-title'>{project.name}</div>
+              <p className='description'>{project.description}</p>
+              <div
+                className={`technologies flex  ${
+                  project.side === 'right' ? 'flex-reverse' : ''
+                }`}
+              >
+                {project.technologies.map((technology, idx) => (
+                  <div className='technology' key={idx}>
+                    {technology}
+                  </div>
+                ))}
+              </div>
+              <div
+                className={`links flex  ${
+                  project.side === 'right' ? 'flex-reverse' : ''
+                }`}
+              >
+                {project.links.map((link, idx) => (
+                  <div className='link' key={idx}>
+                    <a
+                      href={link.url}
+                      target='_blank'
+                      rel='noopener noreferrer'
+                    >
+                      {link.icon}
+                    </a>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+      </Fade>
     </section>
   );
 };
