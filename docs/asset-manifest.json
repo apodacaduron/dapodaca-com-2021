@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dapodaca-com-2021/static/css/main.0b0c5ebe.chunk.css",
-    "main.js": "/dapodaca-com-2021/static/js/main.fd03bd50.chunk.js",
-    "main.js.map": "/dapodaca-com-2021/static/js/main.fd03bd50.chunk.js.map",
+    "main.js": "/dapodaca-com-2021/static/js/main.41dcdf66.chunk.js",
+    "main.js.map": "/dapodaca-com-2021/static/js/main.41dcdf66.chunk.js.map",
     "runtime-main.js": "/dapodaca-com-2021/static/js/runtime-main.5acab2bd.js",
     "runtime-main.js.map": "/dapodaca-com-2021/static/js/runtime-main.5acab2bd.js.map",
     "static/js/2.4796e455.chunk.js": "/dapodaca-com-2021/static/js/2.4796e455.chunk.js",
@@ -29,6 +29,6 @@
     "static/js/runtime-main.5acab2bd.js",
     "static/js/2.4796e455.chunk.js",
     "static/css/main.0b0c5ebe.chunk.css",
-    "static/js/main.fd03bd50.chunk.js"
+    "static/js/main.41dcdf66.chunk.js"
   ]
 }
