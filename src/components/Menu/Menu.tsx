@@ -39,7 +39,7 @@ const Menu: React.FC<IProps> = ({ visible = false, toggleMenu }) => {
   return (
     <div id='menu' className={`${visible ? 'menu-visible' : ''}`}>
       <NoiseOverlay opacity={0.5} />
-      <a href='/#' className='close-menu' onClick={() => toggleMenu()}>
+      <a className='close-menu' onClick={() => toggleMenu()}>
         <X color='#FCFBF6' />
       </a>
       <ul>
