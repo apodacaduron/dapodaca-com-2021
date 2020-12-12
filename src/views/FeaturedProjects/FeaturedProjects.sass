@@ -14,7 +14,7 @@
         border-radius: 20px
         background: $black
         width: 80%
-        height: 400px
+        height: 500px
         overflow: hidden
         img
           object-fit: cover
@@ -47,6 +47,8 @@
       .links
         .link
           margin: 24px 12px
+          svg
+            stroke: $black
   .padding-project-title
     padding-top: 50px
   .padding-project
@@ -57,3 +59,31 @@
 @media only screen and (max-width: 900px)
   #projects
     padding: 100px $mobilePadding 25vh $mobilePadding
+    .flex
+      .column
+        width: 100%
+      .project-text
+        position: absolute
+        padding: $mobilePadding
+        box-sizing: border-box
+        .section-subtitle
+          text-align: center
+        .section-title
+          color: $background
+          text-align: center
+        .description
+          color: $background
+          text-align: center
+          font-size: 1.5rem
+        .technologies
+          justify-content: center
+        .links
+          justify-content: center
+          .link
+            margin: 24px 10px
+            svg
+              stroke: $background
+      .project-image
+        flex-shrink: 0
+        .image-container
+          width: 100%

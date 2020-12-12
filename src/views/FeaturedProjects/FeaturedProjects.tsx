@@ -16,12 +16,12 @@ const FeaturedProjects = () => {
       links: [
         {
           url: 'https://leanfit.mx',
-          icon: <ExternalLink color='#3B393C' />,
+          icon: <ExternalLink />,
         },
         {
           url:
             'https://play.google.com/store/apps/details?id=mx.com.controlla.leanfit_app',
-          icon: <Play color='#3B393C' />,
+          icon: <Play />,
         },
       ],
       image: LeanFit,
@@ -36,11 +36,11 @@ const FeaturedProjects = () => {
         {
           url:
             'https://play.google.com/store/apps/details?id=com.controlla.cano_mobile',
-          icon: <Play color='#3B393C' />,
+          icon: <Play />,
         },
         {
           url: 'https://apps.apple.com/mx/app/cano-steel/id1513753715',
-          icon: <Smartphone color='#3B393C' />,
+          icon: <Smartphone />,
         },
       ],
       image: CanoSteel,
@@ -54,7 +54,7 @@ const FeaturedProjects = () => {
       links: [
         {
           url: 'https://idhome.com.mx',
-          icon: <ExternalLink color='#3B393C' />,
+          icon: <ExternalLink />,
         },
       ],
       image: IdHome,
@@ -76,7 +76,7 @@ const FeaturedProjects = () => {
           key={index}
         >
           <div
-            className={`column flex ${
+            className={`project-image column flex ${
               project.side === 'left' ? 'text-align-right flex-end' : ''
             }`}
           >
@@ -90,7 +90,7 @@ const FeaturedProjects = () => {
             ></div>
           </div>
           <div
-            className={`column ${
+            className={`project-text column ${
               project.side === 'right' ? 'text-align-right' : ''
             }`}
           >
