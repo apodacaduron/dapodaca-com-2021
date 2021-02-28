@@ -4,22 +4,25 @@
 @font-face
   font-family: "New York"
   src: url("./assets/fonts/NewYorkExtraLarge-Semibold.otf")
+  font-display: swap
 
 /** Light */
 @font-face
   font-family: "San Francisco"
   font-weight: light
   src: url("./assets/fonts/SF-Pro-Display-Light.otf")
+  font-display: swap
 
 /** Semibold */
 @font-face
   font-family: "San Francisco"
   font-weight: bold
   src: url("./assets/fonts/SF-Pro-Display-Semibold.otf")
+  font-display: swap
 
 *
   color: $black
-  font-family: 'San Francisco'
+  font-family: 'San Francisco', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
 
 html, body
   height: 100%
@@ -35,11 +38,11 @@ body
 
 h1
   margin: 0
-  font-family: "New York"
+  font-family: "New York", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
 
 h2, h3, h4, h5, h6
   margin: 0
-  font-family: "San Francisco"
+  font-family: "San Francisco", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
 
 .App
   width: 100%

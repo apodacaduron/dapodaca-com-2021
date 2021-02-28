@@ -20,6 +20,10 @@ const FeaturedProjects = () => {
           icon: <ExternalLink />,
         },
         {
+          url: 'https://apps.apple.com/mx/app/leanfit/id1540347366',
+          icon: <Smartphone />,
+        },
+        {
           url:
             'https://play.google.com/store/apps/details?id=mx.com.controlla.leanfit_app',
           icon: <Play />,
