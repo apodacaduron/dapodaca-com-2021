@@ -44,24 +44,16 @@ const Menu: React.FC<IProps> = ({ visible = false, toggleMenu }) => {
       </a>
       <ul>
         <li>
-          <a href='/#' onClick={() => scrollTo('profile')}>
-            Profile
-          </a>
+          <a onClick={() => scrollTo('profile')}>Profile</a>
         </li>
         <li>
-          <a href='/#' onClick={() => scrollTo('projects')}>
-            Projects
-          </a>
+          <a onClick={() => scrollTo('projects')}>Projects</a>
         </li>
         <li>
-          <a href='/#' onClick={() => scrollTo('experience')}>
-            Experience
-          </a>
+          <a onClick={() => scrollTo('experience')}>Experience</a>
         </li>
         <li>
-          <a href='/#' onClick={() => scrollTo('contact')}>
-            Contact
-          </a>
+          <a onClick={() => scrollTo('contact')}>Contact</a>
         </li>
         <li>
           <button className='resume' onClick={() => window.open(PDF)}>
