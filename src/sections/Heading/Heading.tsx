@@ -1,7 +1,6 @@
-import React from 'react';
-import Fade from 'react-reveal';
-
 import './Heading.sass';
+
+import Fade from 'react-reveal';
 
 const Heading = () => {
   return (

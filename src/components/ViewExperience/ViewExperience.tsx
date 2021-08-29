@@ -2,7 +2,7 @@ import './ViewExperience.sass';
 
 import dayjs from 'dayjs';
 import customParseFormat from 'dayjs/plugin/customParseFormat';
-import React, { FC } from 'react';
+import { FC } from 'react';
 import { Globe, X } from 'react-feather';
 
 import { IExperience } from '../../utils/interfaces';

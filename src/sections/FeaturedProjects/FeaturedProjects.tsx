@@ -1,6 +1,5 @@
 import './FeaturedProjects.sass';
 
-import React from 'react';
 import { ExternalLink, Play, Smartphone } from 'react-feather';
 import Fade from 'react-reveal';
 

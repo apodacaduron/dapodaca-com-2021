@@ -1,8 +1,8 @@
-import React from 'react';
-import Footer from '../../components/Footer/Footer';
+import './Contact.sass';
+
 import Fade from 'react-reveal';
 
-import './Contact.sass';
+import Footer from '../../components/Footer/Footer';
 
 const Contact = () => {
   return (

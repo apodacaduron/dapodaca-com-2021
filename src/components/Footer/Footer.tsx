@@ -1,6 +1,5 @@
 import './Footer.sass';
 
-import React from 'react';
 import { Camera, GitHub, Instagram, Linkedin, Mail } from 'react-feather';
 
 const Footer = () => {

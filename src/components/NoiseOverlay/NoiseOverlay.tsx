@@ -1,9 +1,21 @@
-import React from 'react';
 
 import './NoiseOverlay.sass';
 
+import { useEffect, useState } from 'react';
+
 const NoiseOverlay = ({ opacity = 1 }) => {
-  return <div id='noise-overlay' style={{ opacity: opacity }}></div>;
+  const [bodyHeight, setBodyHeight] = useState(0);
+
+  useEffect(() => {
+    setBodyHeight(document.body.clientHeight);
+  }, [document.body.clientHeight]);
+  
+  return (
+    <div
+      id="noise-overlay"
+      style={{ opacity: opacity, height: bodyHeight }}
+    ></div>
+  );
 };
 
 export default NoiseOverlay;
