@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/dapodaca-com-2021/static/css/main.10c4d7a2.chunk.css",
-    "main.js": "/dapodaca-com-2021/static/js/main.c1860229.chunk.js",
-    "main.js.map": "/dapodaca-com-2021/static/js/main.c1860229.chunk.js.map",
+    "main.css": "/dapodaca-com-2021/static/css/main.3929b60f.chunk.css",
+    "main.js": "/dapodaca-com-2021/static/js/main.62832b2e.chunk.js",
+    "main.js.map": "/dapodaca-com-2021/static/js/main.62832b2e.chunk.js.map",
     "runtime-main.js": "/dapodaca-com-2021/static/js/runtime-main.49d8bf90.js",
     "runtime-main.js.map": "/dapodaca-com-2021/static/js/runtime-main.49d8bf90.js.map",
     "static/js/2.b98e35ee.chunk.js": "/dapodaca-com-2021/static/js/2.b98e35ee.chunk.js",
@@ -10,26 +10,22 @@
     "static/js/3.3a125f21.chunk.js": "/dapodaca-com-2021/static/js/3.3a125f21.chunk.js",
     "static/js/3.3a125f21.chunk.js.map": "/dapodaca-com-2021/static/js/3.3a125f21.chunk.js.map",
     "index.html": "/dapodaca-com-2021/index.html",
-    "static/css/main.10c4d7a2.chunk.css.map": "/dapodaca-com-2021/static/css/main.10c4d7a2.chunk.css.map",
+    "static/css/main.3929b60f.chunk.css.map": "/dapodaca-com-2021/static/css/main.3929b60f.chunk.css.map",
     "static/js/2.b98e35ee.chunk.js.LICENSE.txt": "/dapodaca-com-2021/static/js/2.b98e35ee.chunk.js.LICENSE.txt",
     "static/media/CV_Daniel_Apodaca.82053a3d.pdf": "/dapodaca-com-2021/static/media/CV_Daniel_Apodaca.82053a3d.pdf",
-    "static/media/App.sass": "/dapodaca-com-2021/static/media/SF-Pro-Display-Semibold.f50e0151.otf",
     "static/media/cano-steel.46c4c652.jpg": "/dapodaca-com-2021/static/media/cano-steel.46c4c652.jpg",
-    "static/media/controlla.3e56cad5.svg": "/dapodaca-com-2021/static/media/controlla.3e56cad5.svg",
-    "static/media/deskode.648bad64.png": "/dapodaca-com-2021/static/media/deskode.648bad64.png",
+    "static/media/controlla.f454498f.svg": "/dapodaca-com-2021/static/media/controlla.f454498f.svg",
     "static/media/email-address.b3994f1c.svg": "/dapodaca-com-2021/static/media/email-address.b3994f1c.svg",
     "static/media/id-home.2882596e.jpg": "/dapodaca-com-2021/static/media/id-home.2882596e.jpg",
     "static/media/leanfit.a5985335.jpg": "/dapodaca-com-2021/static/media/leanfit.a5985335.jpg",
     "static/media/logo.bc8f2d22.svg": "/dapodaca-com-2021/static/media/logo.bc8f2d22.svg",
-    "static/media/unsplash.6d7da4e0.png": "/dapodaca-com-2021/static/media/unsplash.6d7da4e0.png",
-    "static/media/video.4cf5f613.svg": "/dapodaca-com-2021/static/media/video.4cf5f613.svg",
-    "static/media/xnet.33f4ec25.svg": "/dapodaca-com-2021/static/media/xnet.33f4ec25.svg",
-    "static/media/zoomcatalog.6dc3fe3d.png": "/dapodaca-com-2021/static/media/zoomcatalog.6dc3fe3d.png"
+    "static/media/video.91ac3539.svg": "/dapodaca-com-2021/static/media/video.91ac3539.svg",
+    "static/media/xnet.cced64f5.svg": "/dapodaca-com-2021/static/media/xnet.cced64f5.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.49d8bf90.js",
     "static/js/2.b98e35ee.chunk.js",
-    "static/css/main.10c4d7a2.chunk.css",
-    "static/js/main.c1860229.chunk.js"
+    "static/css/main.3929b60f.chunk.css",
+    "static/js/main.62832b2e.chunk.js"
   ]
 }
