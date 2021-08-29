@@ -8,8 +8,8 @@ const NoiseOverlay = ({ opacity = 1 }) => {
 
   useEffect(() => {
     setBodyHeight(document.body.clientHeight);
-  }, [document.body.clientHeight]);
-  
+  }, []);
+
   return (
     <div
       id="noise-overlay"
