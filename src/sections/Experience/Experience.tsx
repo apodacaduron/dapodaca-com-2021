@@ -1,6 +1,6 @@
 import './Experience.sass';
 
-import React, { FC } from 'react';
+import { FC } from 'react';
 import Fade from 'react-reveal';
 
 import Controlla from '../../assets/experiences/controlla.svg';
@@ -98,13 +98,13 @@ const Experience: FC<IProps> = ({ onClick }) => {
         </div>
         <div className='experience-layout'>
           {experiences.map((experience, index) => (
-            <a
+            <button
               className='experience-item'
               key={index}
               onClick={() => onClick && onClick(experience)}
             >
               <img src={experience.logo} alt={experience.title} />
-            </a>
+            </button>
           ))}
         </div>
       </Fade>

@@ -23,31 +23,39 @@ const Nav = ({ toggleMenu }: IProps) => {
   return (
     <nav>
       <Fade cascade top>
-        <div className='logo'>
-          <img src={Logo} alt='' />
+        <div className="logo">
+          <img src={Logo} alt="Logo" />
         </div>
-        <div className='links'>
-          <ul className='flex'>
+        <div className="links">
+          <ul className="flex">
             <li>
-              <a onClick={() => scrollTo('profile')}>Profile</a>
+              <button className="anchor" onClick={() => scrollTo("profile")}>
+                Profile
+              </button>
             </li>
             <li>
-              <a onClick={() => scrollTo('projects')}>Projects</a>
+              <button className="anchor" onClick={() => scrollTo("projects")}>
+                Projects
+              </button>
             </li>
             <li>
-              <a onClick={() => scrollTo('experience')}>Experience</a>
+              <button className="anchor" onClick={() => scrollTo("experience")}>
+                Experience
+              </button>
             </li>
             <li>
-              <a onClick={() => scrollTo('contact')}>Contact</a>
+              <button className="anchor" onClick={() => scrollTo("contact")}>
+                Contact
+              </button>
             </li>
           </ul>
         </div>
-        <div className='curriculum'>
+        <div className="curriculum">
           <button onClick={() => window.open(PDF)}>Resume</button>
         </div>
-        <a className='menu' onClick={() => toggleMenu()}>
-          <Menu color='#3B393C' />
-        </a>
+        <button className="menu" onClick={toggleMenu}>
+          <Menu color="#3B393C" />
+        </button>
       </Fade>
     </nav>
   );

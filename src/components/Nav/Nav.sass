@@ -24,10 +24,17 @@ nav
       li
         list-style: none
         margin: 0 30px
-        a
-          text-decoration: none
+        button.anchor
           font-size: 1rem
+          border: none
+          outline: none
           cursor: pointer
+          text-decoration: none
+          background: none
+          color: inherit
+          transition: 0.2s all ease-in-out
+          &:hover
+            color: $red
   .curriculum
     button
       background: $red
@@ -60,3 +67,7 @@ nav
       display: flex
       align-items: center
       justify-content: center
+      border: none
+      outline: none
+      cursor: pointer
+      background: none

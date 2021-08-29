@@ -25,17 +25,22 @@
     display: flex
     align-items: center
     justify-content: center
+    border: none
+    outline: none
     cursor: pointer
+    background: none
     svg
       stroke: $background
   .view-content
     max-width: 600px
     padding: $sectionPaddingExtra
     .title
-      color: $background
-      line-height: 90%
-      font-weight: bold
-      font-size: 3rem
+      a
+        color: $background
+        line-height: 90%
+        font-weight: bold
+        font-size: 3rem
+        text-decoration: none
     .period
       color: $background
       margin: 20px 0
@@ -43,6 +48,12 @@
     .description
       color: $background
       font-size: 1.2rem
+    .visit
+      margin-top: 1rem
+      a
+        svg
+          stroke: $background
+          font-size: 1.2rem
 .visible
   opacity: 1 !important
   pointer-events: auto !important
