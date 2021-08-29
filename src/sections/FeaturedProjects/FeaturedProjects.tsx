@@ -1,11 +1,12 @@
+import './FeaturedProjects.sass';
+
 import React from 'react';
-import LeanFit from '../../assets/featured-projects/leanfit.jpg';
-import CanoSteel from '../../assets/featured-projects/cano-steel.jpg';
-import IdHome from '../../assets/featured-projects/id-home.jpg';
-import { ExternalLink, Smartphone, Play } from 'react-feather';
+import { ExternalLink, Play, Smartphone } from 'react-feather';
 import Fade from 'react-reveal';
 
-import './FeaturedProjects.sass';
+import CanoSteel from '../../assets/featured-projects/cano-steel.jpg';
+import IdHome from '../../assets/featured-projects/id-home.jpg';
+import LeanFit from '../../assets/featured-projects/leanfit.jpg';
 
 const FeaturedProjects = () => {
   const featuredProjects = [
@@ -125,6 +126,7 @@ const FeaturedProjects = () => {
                       href={link.url}
                       target='_blank'
                       rel='noopener noreferrer'
+                      aria-label={project.name}
                     >
                       {link.icon}
                     </a>

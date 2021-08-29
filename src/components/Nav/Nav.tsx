@@ -53,7 +53,7 @@ const Nav = ({ toggleMenu }: IProps) => {
         <div className="curriculum">
           <button onClick={() => window.open(PDF)}>Resume</button>
         </div>
-        <button className="menu" onClick={toggleMenu}>
+        <button className="menu" onClick={toggleMenu} aria-label="Menu">
           <Menu color="#3B393C" />
         </button>
       </Fade>

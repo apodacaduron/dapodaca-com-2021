@@ -41,22 +41,26 @@ const ViewExperience: FC<IProps> = ({ experience, visible, close }) => {
 
   return (
     <div id="view-experience" className={visible ? "visible" : ""}>
-      <NoiseOverlay opacity={0.5} />
-      <button className="close" onClick={close}>
-        <X />
-      </button>
-      <div className="view-content">
-        <div className="title">
-          <a href={experience?.url}>{experience?.title}</a>
-        </div>
-        <div className="period">{getPeriods()}</div>
-        <div className="description">{experience?.description}</div>
-        <div className="visit">
-          <a href={experience?.url}>
-            <Globe />
-          </a>
-        </div>
-      </div>
+      {
+        visible && <>
+          <NoiseOverlay opacity={0.5} />
+          <button className="close" onClick={close}>
+            <X />
+          </button>
+          <div className="view-content">
+            <div className="title">
+              <a href={experience?.url}>{experience?.title}</a>
+            </div>
+            <div className="period">{getPeriods()}</div>
+            <div className="description">{experience?.description}</div>
+            <div className="visit">
+              <a href={experience?.url}>
+                <Globe />
+              </a>
+            </div>
+          </div>
+        </>
+      }
     </div>
   );
 };
