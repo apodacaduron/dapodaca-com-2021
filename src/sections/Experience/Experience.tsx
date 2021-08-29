@@ -1,15 +1,16 @@
+import './Experience.sass';
+
 import React, { FC } from 'react';
-import ZoomCatalog from '../../assets/experiences/zoomcatalog.png';
-import Controlla from '../../assets/experiences/controlla.svg';
-import Xnet from '../../assets/experiences/xnet.svg';
-import Unsplash from '../../assets/experiences/unsplash.png';
-import Deskode from '../../assets/experiences/deskode.png';
-import Itsncg from '../../assets/experiences/itsncg.png';
-import Video from '../../assets/experiences/video.svg';
-import { IExperience } from '../../utils/interfaces';
 import Fade from 'react-reveal';
 
-import './Experience.sass';
+import Controlla from '../../assets/experiences/controlla.svg';
+import Deskode from '../../assets/experiences/deskode.png';
+import Itsncg from '../../assets/experiences/itsncg.png';
+import Unsplash from '../../assets/experiences/unsplash.png';
+import Video from '../../assets/experiences/video.svg';
+import Xnet from '../../assets/experiences/xnet.svg';
+import ZoomCatalog from '../../assets/experiences/zoomcatalog.png';
+import { IExperience } from '../../utils/interfaces';
 
 interface IProps {
   onClick?: (experience: IExperience) => void;

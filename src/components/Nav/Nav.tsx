@@ -1,33 +1,17 @@
-import React, { useEffect } from 'react';
-import Logo from '../../assets/logo.svg';
-import { Events, scroller } from 'react-scroll';
-import PDF from '../../assets/CV_Daniel_Apodaca.pdf';
+import './Nav.sass';
+
 import { Menu } from 'react-feather';
 import Fade from 'react-reveal';
+import { scroller } from 'react-scroll';
 
-import './Nav.sass';
+import PDF from '../../assets/CV_Daniel_Apodaca.pdf';
+import Logo from '../../assets/logo.svg';
 
 interface IProps {
   toggleMenu: () => void;
 }
 
 const Nav = ({ toggleMenu }: IProps) => {
-  //////// Links scroll to sections
-  useEffect(() => {
-    Events.scrollEvent.register('begin', function () {
-      console.log('begin', arguments);
-    });
-
-    Events.scrollEvent.register('end', function () {
-      console.log('end', arguments);
-    });
-
-    return () => {
-      Events.scrollEvent.remove('begin');
-      Events.scrollEvent.remove('end');
-    };
-  }, []);
-
   const scrollTo = (elementId: string) => {
     scroller.scrollTo(elementId, {
       duration: 800,
@@ -35,6 +19,7 @@ const Nav = ({ toggleMenu }: IProps) => {
       smooth: 'easeInOutQuart',
     });
   };
+
   return (
     <nav>
       <Fade cascade top>

@@ -1,38 +1,39 @@
-import React, { FC } from 'react';
-import { IExperience } from '../../utils/interfaces';
-import dayjs from 'dayjs';
-import { X } from 'react-feather';
-
 import './ViewExperience.sass';
 
+import dayjs from 'dayjs';
 import customParseFormat from 'dayjs/plugin/customParseFormat';
+import React, { FC } from 'react';
+import { X } from 'react-feather';
+
+import { IExperience } from '../../utils/interfaces';
 import NoiseOverlay from '../NoiseOverlay/NoiseOverlay';
+
 dayjs.extend(customParseFormat);
 
 interface IProps {
-  experience: IExperience;
+  experience?: IExperience;
   visible: boolean;
   close: () => void;
 }
 
 const ViewExperience: FC<IProps> = ({ experience, visible, close }) => {
   const fromDate = () => {
-    return dayjs(experience.from, 'MM-YYYY').format('MMM, YYYY');
+    return dayjs(experience?.from, 'MM-YYYY').format('MMM, YYYY');
   };
   const toDate = () => {
-    if (!experience.isCurrent) {
-      return dayjs(experience.to, 'MM-YYYY').format('MMM, YYYY');
+    if (!experience?.isCurrent) {
+      return dayjs(experience?.to, 'MM-YYYY').format('MMM, YYYY');
     }
     return 'Today';
   };
   const periodLength = () => {
-    if (!experience.isCurrent) {
-      return dayjs(experience.from, 'MM-YYYY').diff(
-        dayjs(experience.to, 'MM-YYYY'),
+    if (!experience?.isCurrent) {
+      return dayjs(experience?.from, 'MM-YYYY').diff(
+        dayjs(experience?.to, 'MM-YYYY'),
         'month'
       );
     }
-    return dayjs(experience.from, 'MM-YYYY').diff(dayjs(), 'month');
+    return dayjs(experience?.from, 'MM-YYYY').diff(dayjs(), 'month');
   };
   const getPeriods = () => {
     return `${fromDate()} - ${toDate()} ${periodLength()} Months`;
@@ -45,11 +46,11 @@ const ViewExperience: FC<IProps> = ({ experience, visible, close }) => {
         <X />
       </a>
       <div className='view-content'>
-        <div className='title'>{experience.title}</div>
+        <div className='title'>{experience?.title}</div>
         <div className='period'>{getPeriods()}</div>
-        <div className='description'>{experience.description}</div>
+        <div className='description'>{experience?.description}</div>
         <div className='visit'>
-          <a href={experience.url}></a>
+          <a href={experience?.url}></a>
         </div>
       </div>
     </div>

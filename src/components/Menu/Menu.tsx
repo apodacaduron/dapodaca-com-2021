@@ -1,10 +1,10 @@
-import React, { useEffect } from 'react';
-import { X } from 'react-feather';
-import NoiseOverlay from '../NoiseOverlay/NoiseOverlay';
-import { Events, scroller } from 'react-scroll';
-import PDF from '../../assets/CV_Daniel_Apodaca.pdf';
-
 import './Menu.sass';
+
+import { X } from 'react-feather';
+import { scroller } from 'react-scroll';
+
+import PDF from '../../assets/CV_Daniel_Apodaca.pdf';
+import NoiseOverlay from '../NoiseOverlay/NoiseOverlay';
 
 interface IProps {
   visible?: boolean;
@@ -12,22 +12,6 @@ interface IProps {
 }
 
 const Menu: React.FC<IProps> = ({ visible = false, toggleMenu }) => {
-  //////// Links scroll to sections
-  useEffect(() => {
-    Events.scrollEvent.register('begin', function () {
-      console.log('begin', arguments);
-    });
-
-    Events.scrollEvent.register('end', function () {
-      console.log('end', arguments);
-    });
-
-    return () => {
-      Events.scrollEvent.remove('begin');
-      Events.scrollEvent.remove('end');
-    };
-  }, []);
-
   const scrollTo = (elementId: string) => {
     toggleMenu();
     scroller.scrollTo(elementId, {
@@ -36,6 +20,7 @@ const Menu: React.FC<IProps> = ({ visible = false, toggleMenu }) => {
       smooth: 'easeInOutQuart',
     });
   };
+
   return (
     <div id='menu' className={`${visible ? 'menu-visible' : ''}`}>
       <NoiseOverlay opacity={0.5} />
