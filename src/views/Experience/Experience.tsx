@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import ZoomCatalog from '../../assets/experiences/zoomcatalog.png';
 import Controlla from '../../assets/experiences/controlla.svg';
 import Xnet from '../../assets/experiences/xnet.svg';
 import Unsplash from '../../assets/experiences/unsplash.png';
@@ -17,14 +18,23 @@ interface IProps {
 const Experience: FC<IProps> = ({ onClick }) => {
   const experiences = [
     {
+      logo: ZoomCatalog,
+      title: 'ZOOMCatalog',
+      description: 'Worked in the frontend development team, close to product designers and backend teams, focused on creating marketing tools and developing a custom design system for the promotional industry.',
+      url: 'https://www.zoomcatalog.com/',
+      from: '04-2021',
+      to: '',
+      isCurrent: true,
+    },
+    {
       logo: Controlla,
       title: 'Controlla Technologies',
       description:
         'Designed and coded landing pages, worked on specific custom CRM and ERP systems, mobile apps on flutter, REST API usage, synchronized a COMPAQ local database through an electron client to store in the cloud, designed and integrated and interactive map for house selling, web deployment, database managment, general troubleshooting, computer support for company members and video/design for marketing occasionally.',
       url: 'http://controlla.com.mx/',
       from: '12-2018',
-      to: '',
-      isCurrent: true,
+      to: '04-2021',
+      isCurrent: false,
     },
     {
       logo: Xnet,
