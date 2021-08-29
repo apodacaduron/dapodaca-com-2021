@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/dapodaca-com-2021/static/css/main.3929b60f.chunk.css",
-    "main.js": "/dapodaca-com-2021/static/js/main.bb806616.chunk.js",
-    "main.js.map": "/dapodaca-com-2021/static/js/main.bb806616.chunk.js.map",
-    "runtime-main.js": "/dapodaca-com-2021/static/js/runtime-main.49d8bf90.js",
-    "runtime-main.js.map": "/dapodaca-com-2021/static/js/runtime-main.49d8bf90.js.map",
-    "static/js/2.a37f7306.chunk.js": "/dapodaca-com-2021/static/js/2.a37f7306.chunk.js",
-    "static/js/2.a37f7306.chunk.js.map": "/dapodaca-com-2021/static/js/2.a37f7306.chunk.js.map",
-    "static/js/3.3a125f21.chunk.js": "/dapodaca-com-2021/static/js/3.3a125f21.chunk.js",
-    "static/js/3.3a125f21.chunk.js.map": "/dapodaca-com-2021/static/js/3.3a125f21.chunk.js.map",
+    "main.css": "/dapodaca-com-2021/static/css/main.db80a4fb.chunk.css",
+    "main.js": "/dapodaca-com-2021/static/js/main.dfe763a7.chunk.js",
+    "main.js.map": "/dapodaca-com-2021/static/js/main.dfe763a7.chunk.js.map",
+    "runtime-main.js": "/dapodaca-com-2021/static/js/runtime-main.cc7e5bd5.js",
+    "runtime-main.js.map": "/dapodaca-com-2021/static/js/runtime-main.cc7e5bd5.js.map",
+    "static/js/2.04eb06b3.chunk.js": "/dapodaca-com-2021/static/js/2.04eb06b3.chunk.js",
+    "static/js/2.04eb06b3.chunk.js.map": "/dapodaca-com-2021/static/js/2.04eb06b3.chunk.js.map",
+    "static/css/3.810337b4.chunk.css": "/dapodaca-com-2021/static/css/3.810337b4.chunk.css",
+    "static/js/3.f8dd465b.chunk.js": "/dapodaca-com-2021/static/js/3.f8dd465b.chunk.js",
+    "static/js/3.f8dd465b.chunk.js.map": "/dapodaca-com-2021/static/js/3.f8dd465b.chunk.js.map",
+    "static/js/4.e831eb32.chunk.js": "/dapodaca-com-2021/static/js/4.e831eb32.chunk.js",
+    "static/js/4.e831eb32.chunk.js.map": "/dapodaca-com-2021/static/js/4.e831eb32.chunk.js.map",
     "index.html": "/dapodaca-com-2021/index.html",
-    "static/css/main.3929b60f.chunk.css.map": "/dapodaca-com-2021/static/css/main.3929b60f.chunk.css.map",
-    "static/js/2.a37f7306.chunk.js.LICENSE.txt": "/dapodaca-com-2021/static/js/2.a37f7306.chunk.js.LICENSE.txt",
+    "static/css/3.810337b4.chunk.css.map": "/dapodaca-com-2021/static/css/3.810337b4.chunk.css.map",
+    "static/css/main.db80a4fb.chunk.css.map": "/dapodaca-com-2021/static/css/main.db80a4fb.chunk.css.map",
+    "static/js/2.04eb06b3.chunk.js.LICENSE.txt": "/dapodaca-com-2021/static/js/2.04eb06b3.chunk.js.LICENSE.txt",
     "static/media/CV_Daniel_Apodaca.82053a3d.pdf": "/dapodaca-com-2021/static/media/CV_Daniel_Apodaca.82053a3d.pdf",
     "static/media/cano-steel.46c4c652.jpg": "/dapodaca-com-2021/static/media/cano-steel.46c4c652.jpg",
     "static/media/controlla.f454498f.svg": "/dapodaca-com-2021/static/media/controlla.f454498f.svg",
@@ -23,9 +27,9 @@
     "static/media/xnet.cced64f5.svg": "/dapodaca-com-2021/static/media/xnet.cced64f5.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.49d8bf90.js",
-    "static/js/2.a37f7306.chunk.js",
-    "static/css/main.3929b60f.chunk.css",
-    "static/js/main.bb806616.chunk.js"
+    "static/js/runtime-main.cc7e5bd5.js",
+    "static/js/2.04eb06b3.chunk.js",
+    "static/css/main.db80a4fb.chunk.css",
+    "static/js/main.dfe763a7.chunk.js"
   ]
 }
