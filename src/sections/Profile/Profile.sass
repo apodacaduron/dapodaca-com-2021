@@ -8,6 +8,7 @@
   display: flex
   justify-content: center
   flex-direction: column
+  overflow: hidden
   p
     font-size: 2rem
   .technologies
@@ -18,7 +19,7 @@
         &::before
           content: "\2022"
           color: $red
-          font-size: 3rem
+          font-size: 2rem
           margin-left: 1rem
 
 @media only screen and (max-width: 900px)
@@ -26,10 +27,10 @@
     padding-left: $mobilePadding
     padding-right: $mobilePadding
     p
-      font-size: 1.5rem
+      font-size: 1rem
     .technologies
       ul
         li
+          font-size: 1rem
           &::before
-            font-size: 2rem
-            margin-left: -2rem
+            margin-left: -1rem
