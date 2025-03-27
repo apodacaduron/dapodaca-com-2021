@@ -46,8 +46,8 @@ const FixedLinks = () => {
       </div>
       <div className="right-links">
         <div className="vertical-email">
-          <a href="mailto:apodacaduron@outlook.com" aria-label="Email">
-            <img src={EmailAddress} alt="apodacaduron@outlook.com" />
+          <a href="mailto:apodacaduron@gmail.com" aria-label="Email">
+            <img src={EmailAddress} alt="apodacaduron@gmail.com" />
           </a>
         </div>
         <div className="vertical-line"></div>
